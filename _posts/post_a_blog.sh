@@ -18,8 +18,8 @@ cat <<EOF > "$date-$title.md"
 layout: post
 tags:
 ---
-# $title 
-Written on $date.
+Entry here
+
 EOF
 
 echo "File created: $date-$title.md"

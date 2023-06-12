@@ -1,6 +1,8 @@
 collections:
   authors:
     output: true
+  categories:
+    output: true
 
 
 plugins:
@@ -14,6 +16,11 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "categories"
   - scope:
       path: ""
       type: "posts"

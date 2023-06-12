@@ -9,6 +9,11 @@ layout: default
   {% if author %}
     - <a href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
+<!-- assign categories -->
+  {% assign categories = site.categories | where: 'short_name', page.categories | first %}
+  {% if categories %}
+    - <a href="{{ categories.url }}">{{ categories.name }}</a>
+  {% endif %}
 </p>
 
 {{ content }}
