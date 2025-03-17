@@ -1,3 +1,40 @@
----
----
+// assets/css/styles.scss
 @import "main";
+
+// Define new color variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$accent-color: #e74c3c;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+// Body styles
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+// Navigation styles
+.navbar {
+  background-color: $primary-color;
+  a {
+    color: #fff;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+// Button styles
+.button {
+  background-color: $secondary-color;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $accent-color;
+  }
+}
